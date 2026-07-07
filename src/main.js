@@ -9,7 +9,7 @@ try {
   
   fetch(link)
     .then(response => response.json())
-    .then(data => core.setOutput("result", JSON.stringify(data.values))
+    .then(data => core.setOutput("result", JSON.stringify(data.values[1]))
     .catch(error => console.error('Error:', error))
   ;
 
