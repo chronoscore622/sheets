@@ -14,6 +14,10 @@ inputs:
     required: true
     default: "Basic&Music"
 
+outputs:
+  result:
+    description: "the fetched data"
+
 runs:
-  using: node24
-  main: dist/index.js
+  using: "node24"
+  main: "dist/index.js"
