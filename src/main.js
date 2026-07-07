@@ -9,12 +9,7 @@ try {
   
   fetch(link)
     .then(response => response.json())
-    .then(data => {
-      core.info(data.values);
-      data.values.forEach((d) => {
-        core.info(d);
-      });
-    })
+    .then(data => core.info(data.values))
     .catch(error => console.error('Error:', error))
   ;
 
