@@ -9,11 +9,11 @@ try {
   
   fetch(link)
     .then(response => response.json())
-    .then(data => core.info(data.values))
+    .then(data => core.setOutput("result", data.values))
     .catch(error => console.error('Error:', error))
   ;
 
-  core.setOutput("result", 'testing');
+  core.info(`Complete maybe?`);
 } catch (error) {
   core.setFailed(error.message);
 };
