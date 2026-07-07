@@ -3,20 +3,13 @@ description: "Get data from spreadsheets"
 
 author: "chronoscore622"
 inputs:
-  spreadsheetId:
-    description: "current spreadsheet's id"
+  data:
+    description: "fetched data"
     required: true
-  key:
-    description: "api key"
-    required: true
-  sheetName:
-    description: "spreadsheet sheet name"
-    required: true
-    default: "Basic&Music"
 
 outputs:
   result:
-    description: "the fetched data"
+    description: "the fetched data in json??"
 
 runs:
   using: "node24"
