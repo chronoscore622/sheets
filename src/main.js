@@ -13,7 +13,6 @@ try {
     .catch(error => console.error('Error:', error))
   ;
 
-  core.info(`Completed (probably)`);
   core.setOutput("result", 'testing');
 } catch (error) {
   core.setFailed(error.message);
