@@ -1,0 +1,19 @@
+name: "Fetch spreadsheet data"
+description: "Get data from spreadsheets"
+
+author: "chronoscore622"
+inputs:
+  spreadsheetId:
+    description: "current spreadsheet's id"
+    required: true
+  key:
+    description: "api key"
+    required: true
+  sheetName:
+    description: "spreadsheet sheet name"
+    required: true
+    default: "Basic&Music"
+
+runs:
+  using: node24
+  main: dist/index.js
