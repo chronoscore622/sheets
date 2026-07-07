@@ -14,6 +14,7 @@ try {
   ;
 
   core.setOutput("result", 'testing');
+  core.info(`Completed (probably)`);
 } catch (error) {
   core.setFailed(error.message);
 };
