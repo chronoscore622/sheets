@@ -10,6 +10,7 @@ try {
   fetch(link)
     .then(response => response.json())
     .then(data => {
+      core.info(data.values);
       data.values.forEach((d) => {
         core.info(d);
       });
