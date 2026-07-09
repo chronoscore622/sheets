@@ -9,12 +9,9 @@ try {
   
   fetch(link)
     .then(response => response.json())
-    .then((data) => {
-      let obj = {};
-      for (let r = 0; r < 1000; r++) {
-        obj[r+1] = data.value[r];
-      };
-      core.setOutput("result", obj)
+    .then(data => data.value)
+    .then((rows) => {
+      core.setOutput("result", rows[5])
     })
     .catch(error => console.error('Error:', error))
   ;
