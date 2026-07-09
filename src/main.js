@@ -11,7 +11,7 @@ try {
     .then(response => response.json())
     .then(data => data.value)
     .then((rows) => {
-      core.setOutput("result", rows[5])
+      core.setOutput("test", rows[5])
     })
     .catch(error => console.error('Error:', error))
   ;
