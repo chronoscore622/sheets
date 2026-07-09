@@ -9,10 +9,7 @@ try {
   
   fetch(link)
     .then(response => response.json())
-    .then(data => data.value)
-    .then((rows) => {
-      core.setOutput("test", rows[5])
-    })
+    .then(data => core.setOutput("test", data.value[5))
     .catch(error => console.error('Error:', error))
   ;
 
