@@ -3,7 +3,9 @@ const github = require('@actions/github');
 
 try {
   const data = core.getInput("data");
-  core.setOutput("result", JSON.stringify(data));
+  data.forEach((i) => {
+    core.info(i);
+  })
 } catch (error) {
   core.setFailed(error.message);
 };
